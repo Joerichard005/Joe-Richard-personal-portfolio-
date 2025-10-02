@@ -1,0 +1,131 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Joe Richard TR — Portfolio</title>
+<link rel="icon" href="profile.jpg" />
+<style>
+:root{
+  --bg:#05060a; --card:#0e1114; --muted:#9aa6b2; --accent:#00ff88;
+  --radius:14px; --maxw:1100px; font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:linear-gradient(180deg,#041018 0%,#08111a 100%);color:#eaf2f8;-webkit-font-smoothing:antialiased;}
+.container{max-width:var(--maxw);margin:28px auto;padding:18px;}
+.header{display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(90deg,var(--accent),#66ffc8);display:flex;align-items:center;justify-content:center;font-weight:800;color:#042023}
+.brand h1{font-size:20px;margin:0}
+.nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600}
+.hero{display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:center;margin-top:18px;padding:22px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border-radius:16px}
+.hero h2{font-size:32px;color:var(--accent);margin:0}
+.hero p{color:var(--muted);margin-top:8px}
+.profile{width:320px;height:320px;border-radius:50%;overflow:hidden;border:6px solid rgba(0,255,136,0.08);display:flex;align-items:center;justify-content:center}
+.profile img{width:100%;height:100%;object-fit:cover;display:block}
+.section{margin-top:28px}
+.section h3{color:var(--accent);margin-bottom:12px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.card{background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.kv{background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;min-width:160px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{background:linear-gradient(90deg, rgba(0,255,136,0.08), rgba(0,255,136,0.02));padding:10px 12px;border-radius:10px;font-weight:700;color:var(--accent)}
+.contact a{color:var(--accent);text-decoration:none;font-weight:700}
+.download{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;background:var(--accent);color:#042023;text-decoration:none;font-weight:800}
+@media (max-width:900px){ .hero{grid-template-columns:1fr} .cards{grid-template-columns:1fr} .profile{width:200px;height:200px} }
+@media (max-width:520px){ .container{padding:12px} .hero h2{font-size:24px} }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">JR</div>
+        <div>
+          <h1>Joe Richard TR</h1>
+          <div style="color:var(--muted);font-size:13px">Human Resource Management • Tiruchirappalli</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <div>
+          <h2>Hi — I'm Joe Richard TR</h2>
+          <p>I am a passionate HR professional (BBA, M.A HRM) focused on building people-first organizations through effective HR practices, leadership, and talent development.</p>
+          <div style="margin-top:16px" class="row">
+            <a class="download" href="resume.pdf" download>Download CV</a>
+            <a class="download" href="mailto:joerichard052003@gmail.com" style="background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)">Email Me</a>
+          </div>
+        </div>
+        <div class="profile">
+          <img src="profile.jpg" alt="Joe Richard TR">
+        </div>
+      </section>
+      <section id="about" class="section">
+        <h3>About Me</h3>
+        <div class="card">
+          <p><strong>Name:</strong> Joe Richard TR</p>
+          <p><strong>Date of Birth:</strong> 05/03/2003</p>
+          <p><strong>Gender:</strong> Male • <strong>Age:</strong> 21</p>
+          <p><strong>Blood Group:</strong> B+ve • <strong>Nationality:</strong> Indian</p>
+          <p><strong>Religion:</strong> Christian • <strong>Marital Status:</strong> Unmarried</p>
+          <p><strong>Address:</strong> 33/15, Renga Nagar 7th cross, 3rd main road Sundar nagar, K.K.Nagar Trichy 21</p>
+          <p style="margin-top:8px"><strong>Languages:</strong> Tamil, English</p>
+        </div>
+      </section>
+      <section id="education" class="section">
+        <h3>Education</h3>
+        <div class="cards">
+          <div class="card">
+            <strong>M.A. Human Resource Management</strong>
+            <p>Postgraduate (ongoing) — HR strategy, organizational behaviour, training & development.</p>
+          </div>
+          <div class="card">
+            <strong>Bachelor of Business Administration (BBA)</strong>
+            <p>Graduated May 2024 — foundation in management, accounting & business studies.</p>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section">
+        <h3>Skills & Interests</h3>
+        <div class="skills">
+          <div class="skill">HR Planning & Recruitment</div>
+          <div class="skill">Organizational Behavior</div>
+          <div class="skill">Compensation & Benefits</div>
+          <div class="skill">Training & Development</div>
+          <div class="skill">Leadership & Team Management</div>
+          <div class="skill">Data-driven HR Strategies</div>
+        </div>
+      </section>
+      <section id="projects" class="section">
+        <h3>Projects & Experience</h3>
+        <div class="card">
+          <strong>HR Internship — ZF RANE TRW Steering Gear Division (Apr 30 — Jun 4, 2025)</strong>
+          <p>Completed a 30-day HR internship covering recruitment support, onboarding, employee documentation, attendance & leave systems, and employee engagement initiatives. Gained practical exposure to industrial HR processes.</p>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <h3>Contact</h3>
+        <div class="card contact">
+          <p><strong>Phone:</strong> <a href="tel:+919894298411">+91 98942 98411</a></p>
+          <p><strong>Email:</strong> <a href="mailto:joerichard052003@gmail.com">joerichard052003@gmail.com</a></p>
+          <p><strong>Location:</strong> Tiruchirappalli, Tamil Nadu, India — 620021</p>
+        </div>
+      </section>
+    </main>
+    <footer style="margin-top:28px;text-align:center;color:var(--muted);">
+      © 2025 Joe Richard TR — Portfolio • Built for web
+    </footer>
+  </div>
+</body>
+</html>
